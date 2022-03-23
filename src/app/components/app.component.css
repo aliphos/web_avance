@@ -1,0 +1,9 @@
+.my-nav a {
+  color : #993399;
+}
+.my-nav .dropdown-item.active, .dropdown-item:active{
+  background: #540754;
+}
+.my-nav .dropdown-item.active, .dropdown-item:active a {
+  color: white;
+}

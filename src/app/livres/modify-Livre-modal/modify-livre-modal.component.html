@@ -1,0 +1,29 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Modifier l'auteur</h4>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="nom">Nom du livre</label>
+      <div class="input-group">
+        <input id="nom" class="form-control"  [(ngModel)]="nom" name="nom" value="">
+      </div>
+      <label for="id_auteur">id_auteur</label>
+      <div class="input-group">
+        <select id="id_auteur"  [(ngModel)]="id_auteur" class="form-select" name="id_auteur" formControlName="id_auteur" >
+          <option *ngFor="let auteur of auteurs" value="{{auteur.id}}" [selected]="auteur.id == this.id_auteur"> {{auteur.nom}} {{auteur.prenom}}</option>
+        </select>
+      </div>
+      <label for="nb_exemplaires">Nombre d'exemplaires</label>
+      <div class="input-group">
+        <input id="nb_exemplaires" type="number" class="form-control"  [(ngModel)]="nb_exemplaires" name="nb_exemplaires" value="">
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn my-btn" (click)="closeModal(); activeModal.close('Save Click')">Sauvegarder</button>
+</div>

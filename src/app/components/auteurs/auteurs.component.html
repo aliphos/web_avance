@@ -1,0 +1,20 @@
+<h2>Voici les différents auteurs enregistrés</h2>
+
+<table id="users">
+  <thead>
+  <tr>
+    <th>Nom</th>
+    <th>Prenom</th>
+    <th>Supprimer ?</th>
+    <th>Modifier ?</th>
+  </tr>
+  </thead>
+  <tbody>
+<tr *ngFor="let auteur of auteurs">
+  <td>{{auteur.nom}}</td>
+  <td>{{auteur.prenom}}</td>
+  <td><button class="btn my-btn" id="remove" (click)="Suppression(auteur.id)">Supprimer</button></td>
+  <td><button class="btn my-btn" id="modifier" (click)="ouvrirModale(auteur.id)">Modifier</button></td>
+</tr>
+  </tbody>
+</table>

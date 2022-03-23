@@ -1,0 +1,22 @@
+<h2>Voici les différents livres enregistrés</h2>
+
+<table id="livres">
+  <thead>
+  <tr>
+    <th>Auteur</th>
+    <th>Nom du Livre</th>
+    <th>Nombre d'exemplaires</th>
+    <th>Supprimer ?</th>
+    <th> Modifier ?</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let livre of livres">
+    <td>{{auteurs[livre.id_auteur].nom}} {{auteurs[livre.id_auteur].prenom}}</td>
+    <td>{{livre.nom}}</td>
+    <td>{{livre.nb_exemplaires}}</td>
+    <td><button class="btn my-btn" id="remove" (click)="Suppression(livre.id)">Supprimer</button></td>
+    <td><button class="btn my-btn" id="modifier" (click)="ouvrirModale(livre.id)">Modifier</button></td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+#livres {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#livres td, #livres th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#livres tr:nth-child(even){background-color:#ecc6ec;}
+
+#livres tr:hover {background-color: #ddd;}
+
+#livres th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #993399;
+  color: white;
+}
+.my-btn {
+  background: #540754;
+  color:white;
+}
