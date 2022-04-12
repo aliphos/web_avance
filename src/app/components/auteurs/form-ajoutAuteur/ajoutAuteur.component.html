@@ -1,7 +1,7 @@
 <div class="container fluid text-center">
 <div class="row">
   <div class="col-lg-12">
-    <h2>Saissisez les informations relatives à l'auteur</h2>
+    <h2 i18n="Title for the Author Modification form">Please enter the author's infos</h2>
   </div>
 </div>
 
@@ -11,14 +11,14 @@
       <form [formGroup]="auteurForm" (ngSubmit)="envoiForm()">
         <div class="row g-3">
           <div class="mb-3 col-lg-6">
-            <label for="nom">Son nom : </label>
+            <label for="nom" i18n="Label for Author Modification form firstname input">His firstname: </label>
             <input type="text" name="nom" id="nom" formControlName="nom">
           </div>
           <div class="mb-3 col-lg-6">
-            <label for="prenom">Son prenom : </label>
+            <label for="prenom" i18n="Label for Author Modification form lastname input">His lastname : </label>
             <input type="text" name="prenom" id="prenom" formControlName="prenom">
           </div>
-          <button type="submit" name="submit" [disabled]="!auteurForm.valid" class="btn  my-btn">Enregistrer</button>
+          <button type="submit" name="submit" [disabled]="!auteurForm.valid" class="btn  my-btn" i18n="Label for Author Modification form submit input">Save</button>
         </div>
 
       </form>

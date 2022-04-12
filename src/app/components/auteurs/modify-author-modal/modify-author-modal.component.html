@@ -1,5 +1,5 @@
 <div class="modal-header">
-  <h4 class="modal-title" id="modal-basic-title">Modifier l'auteur</h4>
+  <h4 class="modal-title" id="modal-basic-title" i18n="Title for Author Modification Modal ">Modify the Author</h4>
   <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -7,11 +7,11 @@
 <div class="modal-body">
   <form>
     <div class="form-group">
-      <label for="nom">Nom</label>
+      <label for="nom" i18n="Label for Author Modification Modal firstname input">Firstname</label>
       <div class="input-group">
         <input id="nom" class="form-control"  [(ngModel)]="nom" name="nom" value="">
       </div>
-      <label for="prenom">Prenom</label>
+      <label for="prenom" i18n="Label for Author Modification Modal lastname input">Lastname</label>
       <div class="input-group">
         <input id="prenom" class="form-control"  [(ngModel)]="prenom" name="prenom" value="">
       </div>
@@ -19,5 +19,5 @@
   </form>
 </div>
 <div class="modal-footer">
-  <button type="button" class="btn my-btn" (click)="closeModal(); activeModal.close('Save Click')">Sauvegarder</button>
+  <button type="button" class="btn my-btn" (click)="closeModal(); activeModal.close('Save Click')" i18n="Label for Author Modification Modale submit input">Save</button>
 </div>

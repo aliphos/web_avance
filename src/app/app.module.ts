@@ -12,6 +12,7 @@ import { ModifyAuthorModalComponent } from './components/auteurs/modify-author-m
 import { LivresComponent } from './livres/livres.component';
 import {AjoutLivrecomponent} from "./livres/form-ajoutLivre/ajoutLivrecomponent";
 import {ModifyLivreModalComponent} from "./livres/modify-Livre-modal/modify-livre-modal.component";
+import {HttpClientModule} from "@angular/common/http";
 /*
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
@@ -47,7 +48,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
     KeycloakAngularModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   bootstrap: [
     AppComponent

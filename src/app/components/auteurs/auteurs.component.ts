@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {AuteurService} from "../../services/auteur-service";
 import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {ModifyAuthorModalComponent} from "./modify-author-modal/modify-author-modal.component";
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -16,16 +17,29 @@ export class AuteursComponent implements OnInit {
 
   name: String = ""
 
-  constructor(auteurService : AuteurService,private modalService: NgbModal) {
+  constructor(auteurService : AuteurService,private modalService: NgbModal,private router: Router) {
     this.auteurService = auteurService;
   }
 
   ngOnInit(): void {
-    this.auteurs = this.auteurService.getAuteurs();
+    this.recuperation();
+
+  }
+
+  recuperation(): void {
+    this.auteurService.getAuteurs().subscribe(auteurs => {
+      this.auteurs = auteurs;console.log(this.auteurs);
+    });
   }
 
   Suppression(id:number) : void {
-    this.auteurService.supprimerAuteur(id);
+    this.auteurService.supprimerAuteur(id).subscribe(response => {
+      console.log(response);
+      if(response.statusCode == 201){
+        this.recuperation();
+      }
+
+    });
   }
 
 
@@ -36,6 +50,7 @@ export class AuteursComponent implements OnInit {
     modal.componentInstance.id = id;
     modal.result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
+      this.recuperation();
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });

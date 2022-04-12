@@ -1,22 +1,22 @@
-<h2>Voici les différents livres enregistrés</h2>
+<h2 i18n="Title for  books component">Here's the list of books stored :</h2>
 
 <table id="livres">
   <thead>
   <tr>
-    <th>Auteur</th>
-    <th>Nom du Livre</th>
-    <th>Nombre d'exemplaires</th>
-    <th>Supprimer ?</th>
-    <th> Modifier ?</th>
+    <th i18n="header Author for the table  for  books component">Author</th>
+    <th i18n="header book name for the table  for  books component">Book's Name</th>
+    <th i18n="header Number of book for the table  for  books component">Number of books</th>
+    <th i18n="header Delete?  for  books component">Delete ?</th>
+    <th i18n="header Modify? for the table  for  books component"> Modify ?</th>
   </tr>
   </thead>
   <tbody>
   <tr *ngFor="let livre of livres">
-    <td>{{auteurs[livre.id_auteur].nom}} {{auteurs[livre.id_auteur].prenom}}</td>
+    <td>test</td>
     <td>{{livre.nom}}</td>
     <td>{{livre.nb_exemplaires}}</td>
-    <td><button class="btn my-btn" id="remove" (click)="Suppression(livre.id)">Supprimer</button></td>
-    <td><button class="btn my-btn" id="modifier" (click)="ouvrirModale(livre.id)">Modifier</button></td>
+    <td><button class="btn my-btn" id="remove" (click)="Suppression(livre.id)" i18n="Button Delete for the table  for  books component">Delete</button></td>
+    <td><button class="btn my-btn" id="modifier" (click)="ouvrirModale(livre.id)" i18n="Button Modify for the table  for  books component">Modify</button></td>
   </tr>
   </tbody>
 </table>

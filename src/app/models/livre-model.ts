@@ -1,3 +1,4 @@
+import {Auteur} from "./auteur-model";
 
 export class Livre {
 
@@ -5,6 +6,7 @@ export class Livre {
   id_auteur: number = 0;
   nom: string = "";
   nb_exemplaires : number = 0;
+  auteur: Auteur | undefined;
 
 
   constructor(id: number,id_auteur: number, nom : string,nb_exemplaires : number) {
@@ -12,5 +14,9 @@ export class Livre {
     this.id_auteur = id_auteur;
     this.nom = nom;
     this.nb_exemplaires = nb_exemplaires;
+    this.auteur = undefined;
   }
+
+
+
 }

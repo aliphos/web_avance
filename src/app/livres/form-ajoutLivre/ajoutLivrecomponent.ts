@@ -28,8 +28,12 @@ export class AjoutLivrecomponent implements OnInit {
   auteurs = Array();
   envoiForm() {
   this.livre = new Livre(0,this.livreForm.value.id_auteur,this.livreForm.value.nom,this.livreForm.value.nb_exemplaires);
-    this.livreService.addLivre(this.livre);
-    this.router.navigate(['livres']);
+  this.livre.auteur = this.auteurs.find(x => x.id === this.livre.id_auteur);
+  console.log(this.livre);
+    this.livreService.addLivre(this.livre).subscribe(response => {
+      this.router.navigate(['livres']);
+    });
+
   }
 
 
@@ -40,10 +44,13 @@ export class AjoutLivrecomponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.auteurs = this.auteurService.getAuteurs();
-    if(this.auteurs.length > 0){
-      this.livreForm.controls['id_auteur'].enable();
-    }
+    this.auteurService.getAuteurs().subscribe(auteurs => {
+      this.auteurs = auteurs;
+      if(this.auteurs.length > 0){
+        this.livreForm.controls['id_auteur'].enable();
+      }
+    });
+
   }
 
 }

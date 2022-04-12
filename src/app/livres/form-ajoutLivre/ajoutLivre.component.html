@@ -1,7 +1,7 @@
 <div class="container fluid text-center">
 <div class="row">
   <div class="col-lg-12">
-    <h2>Saissisez les informations relatives au livre</h2>
+    <h2 i18n="Title for Add a book component">Please enter the book's informations</h2>
   </div>
 </div>
 
@@ -11,13 +11,13 @@
       <form [formGroup]="livreForm" (ngSubmit)="envoiForm()">
         <div class="row g-3">
           <div class="mb-3 col-lg-6">
-            <label for="nom">Nom du Livre : </label>
+            <label for="nom" i18n="Label for Name Input for Add a book component">Book's name : </label>
             <div class="input-group">
             <input type="text" name="nom" class="form-control" id="nom" formControlName="nom">
             </div>
           </div>
           <div *ngIf="auteurs.length > 0" class="mb-3 col-lg-6">
-            <label for="id_auteur">Son auteur : </label>
+            <label for="id_auteur" i18n="Label for author name Input for Add a book component">His author : </label>
             <div class="input-group">
             <select id="id_auteur" class="form-select" name="id_auteur" formControlName="id_auteur" >
             <option *ngFor="let auteur of auteurs" value="{{auteur.id}}"> {{auteur.nom}} {{auteur.prenom}}</option>
@@ -25,17 +25,17 @@
             </div>
           </div>
           <div *ngIf="auteurs.length == 0" class="mb-3 col-lg-6">
-            <label for="id_auteur">Son auteur : </label>
+            <label for="id_auteur" i18n="Label for author name Input for Add a book component">His author :  </label>
             <div class="input-group">
               <select id="id_auteur" class="form-select" name="id_auteur"   formControlName="id_auteur" >
               </select>
             </div>
           </div>
           <div class="mb-3 col-lg-12">
-            <label for="nb_exemplaires">Son nombre d'exemplaires : </label>
+            <label for="nb_exemplaires" i18n="Label for number of books for Add a book component">The number of Books : </label>
             <input type="number" class="form-control" name="nb_exemplaires" id="nb_exemplaires" formControlName="nb_exemplaires">
           </div>
-          <button type="submit" name="submit" [disabled]="!livreForm.valid" class="btn  my-btn">Enregistrer</button>
+          <button type="submit" name="submit" [disabled]="!livreForm.valid" class="btn  my-btn" i18n="Label for submit Input for Add a book component">Save</button>
         </div>
 
       </form>

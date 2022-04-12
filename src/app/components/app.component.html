@@ -6,24 +6,24 @@
 </header>
 
 <body>
-<ul ngbNav #nav="ngbNav" [activeId]="1" class="nav-tabs navbar justify-content-center my-nav">
+<ul ngbNav #nav="ngbNav" [activeId]="1" class="nav-tabs navbar justify-content-center my-nav mb-5">
   <li [ngbNavItem]="1">
-    <a ngbNavLink routerLink="/accueil" routerLinkActive="active">Accueil</a>
+    <a ngbNavLink routerLink="/accueil" routerLinkActive="active" i18n="Homepage Link for App Component">Homepage</a>
 
   </li>
   <li ngbDropdown class="nav-item">
-    <a href (click)="false" class="nav-link" ngbDropdownToggle>Livres</a>
+    <a href (click)="false" class="nav-link" ngbDropdownToggle i18n="Books Link for App Component">Books</a>
     <div ngbDropdownMenu>
-      <a ngbDropdownItem routerLink="/livres" routerLinkActive="active">Consulter la liste</a>
-      <a ngbDropdownItem routerLink="/ajoutLivre" routerLinkActive="active">Ajouter un Livre</a>
+      <a ngbDropdownItem routerLink="/livres" routerLinkActive="active" i18n="See the book list Link for App Component">See the List</a>
+      <a ngbDropdownItem routerLink="/ajoutLivre" routerLinkActive="active" i18n="Add a book Link for App Component">Add a Book</a>
     </div>
   </li>
 
   <li ngbDropdown class="nav-item">
-    <a href (click)="false" class="nav-link" ngbDropdownToggle>Auteurs</a>
+    <a href (click)="false" class="nav-link" ngbDropdownToggle i18n="Authors Link for App Component">Authors</a>
     <div ngbDropdownMenu>
-      <a ngbDropdownItem routerLink="/auteurs" routerLinkActive="active">Consulter la liste</a>
-      <a ngbDropdownItem routerLink="/ajoutAuteur" routerLinkActive="active">Ajouter un auteur</a>
+      <a ngbDropdownItem routerLink="/auteurs" routerLinkActive="active" i18n="See the Authors List Link for App Component">See the list</a>
+      <a ngbDropdownItem routerLink="/ajoutAuteur" routerLinkActive="active" i18n="Add a author Link for App Component">Add a author</a>
     </div>
   </li>
 

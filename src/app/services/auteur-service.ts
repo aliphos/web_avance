@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Auteur} from "../models/auteur-model";
+import {HttpService} from "./http.service";
 
 @Injectable({
   providedIn: 'root'
@@ -7,31 +8,30 @@ import {Auteur} from "../models/auteur-model";
 export class AuteurService {
 
   private auteurs = Array();
+  myHttp : HttpService;
 
 
-  constructor() {
-
+  constructor(myHttp : HttpService) {
+    this.myHttp = myHttp;
   }
 
   addAuteur(newAuteur : Auteur) {
-    newAuteur.id = this.auteurs.length;
-   this.auteurs.push(newAuteur);
+
+   return this.myHttp.postAuthor(newAuteur);
   }
 
   getAuteurs(){
-    return this.auteurs;
+    return this.myHttp.getAuthors();
   }
+
   supprimerAuteur(id : number){
-    const index = this.auteurs.findIndex(obj => obj.id == id );
-    if (index > -1) {
-      this.auteurs.splice(index, 1);
-    }
+    return this.myHttp.deleteAuthor(id);
   }
 
   modifierAuteur(id: number,nom : string, prenom : string){
-    const index = this.auteurs.findIndex(obj => obj.id == id);
-    this.auteurs[index].nom = nom;
-    this.auteurs[index].prenom = prenom;
+    let auteur = new Auteur(nom,prenom,id);
+    return this.myHttp.putAuthor(auteur);
+
 
   }
 }

@@ -9,7 +9,7 @@ import {AjoutLivrecomponent} from "./livres/form-ajoutLivre/ajoutLivrecomponent"
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
-  { path: 'auteurs', component: AuteursComponent/*,canActivate: [AuthGuard],data: { roles: ['user'] }*/ },
+  { path: 'auteurs', component: AuteursComponent ,canActivate: [AuthGuard],data: { roles: ['user'] } },
   { path: 'ajoutAuteur', component: AjoutAuteurComponent },
   { path: 'livres', component: LivresComponent },
   { path: 'ajoutLivre', component: AjoutLivrecomponent},
@@ -20,7 +20,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: [
-    //AuthGuard
+    AuthGuard
   ]
 })
 export class AppRoutingModule { }

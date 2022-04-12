@@ -22,15 +22,20 @@ export class ModifyAuthorModalComponent implements OnInit {
 
   ngOnInit(): void {
     let auteurs = new Array();
-    auteurs = this.auteurService.getAuteurs();
-    this.nom = auteurs[this.id].nom;
-    this.prenom = auteurs[this.id].prenom;
+    this.auteurService.getAuteurs().subscribe(auteursReceived => {
+      auteurs = auteursReceived;
+      this.nom = auteurs.find(x => x.id === this.id).nom;
+      this.prenom = auteurs.find(x => x.id === this.id).prenom;
+    });
+
 
   }
 
   closeModal(): void {
     console.log(this.id + "-" + this.prenom + "-" + this.nom);
-    this.auteurService.modifierAuteur(this.id,this.nom,this.prenom);
+    this.auteurService.modifierAuteur(this.id,this.nom,this.prenom).subscribe(response => {
+
+    });
 
 
   }

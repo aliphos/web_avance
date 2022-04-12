@@ -27,16 +27,29 @@ export class ModifyLivreModalComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.auteurs = this.auteurService.getAuteurs();
-    this.livres = this.livreService.getLivres();
-    this.nom = this.livres[this.id].nom;
-    this.nb_exemplaires = this.livres[this.id].nb_exemplaires;
-    this.id_auteur = this.livres[this.id].id_auteur;
+    this.auteurService.getAuteurs().subscribe(auteurs => {
+      this.auteurs = auteurs;
+    });
+    this.livreService.getLivres().subscribe(livres => {
+      this.livres = livres;
+      this.nom = this.livres.find(x => x.id === this.id).nom;
+      console.log(this.livres.find(x => x.id === this.id));
+      this.nb_exemplaires = this.livres.find(x => x.id === this.id).nb_exemplaires;
+      this.id_auteur = this.livres.find(x => x.id === this.id).id_auteur;
+
+    });
+
   }
+
+
 
   closeModal(): void {
     console.log(this.id + "-" + this.nom + "-" + this.id_auteur);
-    this.livreService.modifierLivre(this.id,this.id_auteur,this.nom,this.nb_exemplaires);
+    this.livreService.modifierLivre(this.id,this.id_auteur,this.nom,this.nb_exemplaires,this.auteurs.find(x => x.id === this.id_auteur)).subscribe(responses => {
+         this.auteurService.getAuteurs().subscribe(auteurs => {
+          this.auteurs = auteurs;
+        })
+    });
 
 
   }

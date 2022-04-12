@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/alert/alert.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.slide-number" datatype="html">
+        <source> Slide <x id="INTERPOLATION" equiv-text="e: boolean) {"/> of <x id="INTERPOLATION_1" equiv-text="alue);
+  }"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">147,154</context>
+        </context-group>
+        <note priority="1" from="description">Currently selected slide number read by screen reader</note>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">171,174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">244,247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">261,264</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">275,278</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">296</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">311,312</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">326,328</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">338</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">349,350</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="*
+   * @s"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
+          <context context-type="linenumber">58,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">131,133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">183,184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">198,199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">210,213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">230,231</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">250,254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">268,270</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">284,286</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source><x id="INTERPOLATION"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source><x id="INTERPOLATION"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.toast.close-aria" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/toast/toast.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1305357231288135414" datatype="html">
+        <source>Homepage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/app.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+        <note priority="1" from="description">Homepage Link for App Component</note>
+      </trans-unit>
+      <trans-unit id="5224604665222373201" datatype="html">
+        <source>Books</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/app.component.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+        <note priority="1" from="description">Books Link for App Component</note>
+      </trans-unit>
+      <trans-unit id="3276832843513375622" datatype="html">
+        <source>See the List</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/app.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <note priority="1" from="description">See the book list Link for App Component</note>
+      </trans-unit>
+      <trans-unit id="2776981232560756868" datatype="html">
+        <source>Add a Book</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/app.component.html</context>
+          <context context-type="linenumber">18,22</context>
+        </context-group>
+        <note priority="1" from="description">Add a book Link for App Component</note>
+      </trans-unit>
+      <trans-unit id="5505637243815082364" datatype="html">
+        <source>Authors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/app.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+        <note priority="1" from="description">Authors Link for App Component</note>
+      </trans-unit>
+      <trans-unit id="4683731016440526311" datatype="html">
+        <source>See the list</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/app.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+        <note priority="1" from="description">See the Authors List Link for App Component</note>
+      </trans-unit>
+      <trans-unit id="5524203885444647775" datatype="html">
+        <source>Add a author</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/app.component.html</context>
+          <context context-type="linenumber">26,32</context>
+        </context-group>
+        <note priority="1" from="description">Add a author Link for App Component</note>
+      </trans-unit>
+      <trans-unit id="7672462985625176442" datatype="html">
+        <source>Here&apos;s the list of authors stored : </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/auteurs.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Label for Author Display Page</note>
+      </trans-unit>
+      <trans-unit id="354372175658025153" datatype="html">
+        <source>FirstName</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/auteurs.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Header Name for Author Display Page</note>
+      </trans-unit>
+      <trans-unit id="2063920705743351386" datatype="html">
+        <source>LastName</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/auteurs.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Header LastName for Author Display Page</note>
+      </trans-unit>
+      <trans-unit id="5991931653858351757" datatype="html">
+        <source>Delete ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/auteurs.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Header Delete for Author Display Page</note>
+      </trans-unit>
+      <trans-unit id="550724468610596177" datatype="html">
+        <source>Modify ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/auteurs.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Header Modifier for Author Display Page</note>
+      </trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Delete</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/auteurs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Button delete for Author Display Page</note>
+      </trans-unit>
+      <trans-unit id="3251759404563225821" datatype="html">
+        <source>Modify</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/auteurs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Button modify for Author Display Page</note>
+      </trans-unit>
+      <trans-unit id="7257451747493446373" datatype="html">
+        <source>Please enter the author&apos;s infos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/form-ajoutAuteur/ajoutAuteur.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Title for the Author Modification form</note>
+      </trans-unit>
+      <trans-unit id="4098674543785620479" datatype="html">
+        <source>His firstname: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/form-ajoutAuteur/ajoutAuteur.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Label for Author Modification form firstname input</note>
+      </trans-unit>
+      <trans-unit id="1294566443606438222" datatype="html">
+        <source>His lastname : </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/form-ajoutAuteur/ajoutAuteur.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Label for Author Modification form lastname input</note>
+      </trans-unit>
+      <trans-unit id="3768927257183755959" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/form-ajoutAuteur/ajoutAuteur.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/modify-author-modal/modify-author-modal.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/form-ajoutLivre/ajoutLivre.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/modify-Livre-modal/modify-livre-modal.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Label for Author Modification form submit input</note>
+      </trans-unit>
+      <trans-unit id="545379146221299053" datatype="html">
+        <source>Modify the Author</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/modify-author-modal/modify-author-modal.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Title for Author Modification Modal</note>
+      </trans-unit>
+      <trans-unit id="4360072995007239979" datatype="html">
+        <source>Firstname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/modify-author-modal/modify-author-modal.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Label for Author Modification Modal firstname input</note>
+      </trans-unit>
+      <trans-unit id="7617062131879090220" datatype="html">
+        <source>Lastname</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/auteurs/modify-author-modal/modify-author-modal.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Label for Author Modification Modal lastname input</note>
+      </trans-unit>
+      <trans-unit id="2673252911345143466" datatype="html">
+        <source>Please enter the book&apos;s informations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/form-ajoutLivre/ajoutLivre.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Title for Add a book component</note>
+      </trans-unit>
+      <trans-unit id="1200234693661750388" datatype="html">
+        <source>Book&apos;s name : </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/form-ajoutLivre/ajoutLivre.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Label for Name Input for Add a book component</note>
+      </trans-unit>
+      <trans-unit id="7192509631951250450" datatype="html">
+        <source>His author : </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/form-ajoutLivre/ajoutLivre.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/form-ajoutLivre/ajoutLivre.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Label for author name Input for Add a book component</note>
+      </trans-unit>
+      <trans-unit id="4358938863422787542" datatype="html">
+        <source>The number of Books : </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/form-ajoutLivre/ajoutLivre.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Label for number of books for Add a book component</note>
+      </trans-unit>
+      <trans-unit id="6154666918891877305" datatype="html">
+        <source>Here&apos;s the list of books stored :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Title for  books component</note>
+      </trans-unit>
+      <trans-unit id="7071470734400948493" datatype="html">
+        <source>Author</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">header Author for the table  for  books component</note>
+      </trans-unit>
+      <trans-unit id="1118395018786514423" datatype="html">
+        <source>Book&apos;s Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">header book name for the table  for  books component</note>
+      </trans-unit>
+      <trans-unit id="4004464080367208338" datatype="html">
+        <source>Number of books</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">header Number of book for the table  for  books component</note>
+      </trans-unit>
+      <trans-unit id="7406065263181283447" datatype="html">
+        <source> Modify ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/livres.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">header Modify? for the table  for  books component</note>
+      </trans-unit>
+      <trans-unit id="3601901829239885210" datatype="html">
+        <source>Modify the book</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/modify-Livre-modal/modify-livre-modal.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Title  for Modify a book component</note>
+      </trans-unit>
+      <trans-unit id="823383891562621831" datatype="html">
+        <source>Book&apos;s name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/modify-Livre-modal/modify-livre-modal.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Label for input name  for Modify a book component</note>
+      </trans-unit>
+      <trans-unit id="3560569950423269078" datatype="html">
+        <source>The author : </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/modify-Livre-modal/modify-livre-modal.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Label for input  author name  for Modify a book component</note>
+      </trans-unit>
+      <trans-unit id="8967252209743302614" datatype="html">
+        <source>The number of Books :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/livres/modify-Livre-modal/modify-livre-modal.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Label for input number of book  for Modify a book component</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

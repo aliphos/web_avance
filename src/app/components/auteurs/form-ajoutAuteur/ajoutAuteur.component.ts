@@ -25,8 +25,10 @@ export class AjoutAuteurComponent implements OnInit {
 
   envoiForm() {
   this.auteur = new Auteur(this.auteurForm.value.nom,this.auteurForm.value.prenom,0);
-    this.auteurService.addAuteur(this.auteur);
-    this.router.navigate(['auteurs']);
+    this.auteurService.addAuteur(this.auteur).subscribe(response => {
+      this.router.navigate(['auteurs']);
+    });
+
   }
 
 
