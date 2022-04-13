@@ -3,9 +3,10 @@ import {LivreService} from "../services/livre.service";
 import {AuteurService} from "../services/auteur-service";
 import {ModalDismissReasons, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {ModifyLivreModalComponent} from "./modify-Livre-modal/modify-livre-modal.component";
-import {HttpService} from "../services/http.service";
+import {WebService} from "../services/web.service";
 import {Auteur} from "../models/auteur-model";
 import {Livre} from "../models/livre-model";
+import {NGXLogger} from "ngx-logger";
 
 @Component({
   selector: 'app-livres',

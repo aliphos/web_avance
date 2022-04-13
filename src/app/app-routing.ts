@@ -8,11 +8,11 @@ import {LivresComponent} from "./livres/livres.component";
 import {AjoutLivrecomponent} from "./livres/form-ajoutLivre/ajoutLivrecomponent";
 
 const routes: Routes = [
-  { path: 'accueil', component: AccueilComponent },
+  { path: 'accueil', component: AccueilComponent ,canActivate: [AuthGuard],data: { roles: ['user'] }},
   { path: 'auteurs', component: AuteursComponent ,canActivate: [AuthGuard],data: { roles: ['user'] } },
-  { path: 'ajoutAuteur', component: AjoutAuteurComponent },
-  { path: 'livres', component: LivresComponent },
-  { path: 'ajoutLivre', component: AjoutLivrecomponent},
+  { path: 'ajoutAuteur', component: AjoutAuteurComponent ,canActivate: [AuthGuard],data: { roles: ['user'] }},
+  { path: 'livres', component: LivresComponent ,canActivate: [AuthGuard],data: { roles: ['user'] }},
+  { path: 'ajoutLivre', component: AjoutLivrecomponent ,canActivate: [AuthGuard],data: { roles: ['user'] }},
   { path: '**', redirectTo: '/accueil', pathMatch: 'full' },
 ];
 

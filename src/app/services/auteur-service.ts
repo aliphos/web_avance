@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Auteur} from "../models/auteur-model";
-import {HttpService} from "./http.service";
+import {WebService} from "./web.service";
+import {Logger} from "./customLogging.service";
+import {LogLevel} from "../models/logLevel-model";
 
 @Injectable({
   providedIn: 'root'
@@ -8,15 +10,17 @@ import {HttpService} from "./http.service";
 export class AuteurService {
 
   private auteurs = Array();
-  myHttp : HttpService;
+  myHttp : WebService;
+  logger : Logger;
 
 
-  constructor(myHttp : HttpService) {
+  constructor(myHttp : WebService, logger : Logger) {
     this.myHttp = myHttp;
+    this.logger = logger;
   }
 
   addAuteur(newAuteur : Auteur) {
-
+    this.logger.log("Un auteur a été créé",LogLevel.INFO);
    return this.myHttp.postAuthor(newAuteur);
   }
 

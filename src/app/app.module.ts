@@ -12,8 +12,9 @@ import { ModifyAuthorModalComponent } from './components/auteurs/modify-author-m
 import { LivresComponent } from './livres/livres.component';
 import {AjoutLivrecomponent} from "./livres/form-ajoutLivre/ajoutLivrecomponent";
 import {ModifyLivreModalComponent} from "./livres/modify-Livre-modal/modify-livre-modal.component";
-import {HttpClientModule} from "@angular/common/http";
-/*
+import {HttpClientModule, HttpHeaders} from "@angular/common/http";
+import {AuteurService} from "./services/auteur-service";
+
 function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
     keycloak.init({
@@ -23,14 +24,13 @@ function initializeKeycloak(keycloak: KeycloakService) {
         clientId: 'Angular',
       },
       initOptions: {
-        onLoad: 'form-ajoutAuteur-required',
-        silentCheckSsoRedirectUri:
-          window.location.origin + '/assets/silent-check-sso.html'
-      }
+        onLoad: 'login-required'
+      },
+      bearerExcludedUrls: ['http://localhost:5000/logsAngular']
     });
 }
 
-*/
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +55,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
     AppComponent
   ],
   providers: [
-    /*
+
     AuteurService,
     {
       provide: APP_INITIALIZER,
@@ -64,7 +64,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
       deps: [KeycloakService]
     }
 
-     */
+
   ]
 })
 export class AppModule { }

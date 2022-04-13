@@ -50,7 +50,6 @@ export class AuteursComponent implements OnInit {
     modal.componentInstance.id = id;
     modal.result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
-      this.recuperation();
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
@@ -66,6 +65,7 @@ export class AuteursComponent implements OnInit {
   }
 
   closeModale() {
+    this.recuperation();
     console.log(this.name);
   }
 

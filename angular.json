@@ -85,15 +85,15 @@
           "configurations": {
             "production": {
               "browserTarget": "front:build:production",
-              "proxyConfig": "src/proxy.conf.json"
+              "proxyConfig": "proxy.config.json"
             },
             "development": {
               "browserTarget": "front:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "proxyConfig": "proxy.config.json"
             },
             "fr": {
               "browserTarget": "front:build:fr",
-              "proxyConfig": "src/proxy.conf.json"
+              "proxyConfig": "proxy.config.json"
             }
           },
           "defaultConfiguration": "development"

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Livre} from "../models/livre-model";
-import {HttpService} from "./http.service";
+import {WebService} from "./web.service";
 import {Auteur} from "../models/auteur-model";
 
 @Injectable({
@@ -10,9 +10,9 @@ export class LivreService {
 
 
   private livres = Array();
-  myHttp : HttpService;
+  myHttp : WebService;
 
-  constructor(myHttp : HttpService) {
+  constructor(myHttp : WebService) {
     this.myHttp = myHttp;
   }
   addLivre(newLivre : Livre) {
